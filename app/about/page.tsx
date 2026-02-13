@@ -1,16 +1,15 @@
+import HeroAbout from "@/components/hero-about";
 import HeroText from "@/components/hero-text";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { TbAward } from "react-icons/tb";
 import { FaBox } from "react-icons/fa";
-import HeroAbout from "@/components/hero-about";
+import { TbAward } from "react-icons/tb";
 export default function AboutPage() {
   return (
     <>
@@ -63,7 +62,10 @@ export default function AboutPage() {
       </div>
 
       <div className="my-20">
-        <HeroAbout />
+        <HeroAbout HeroOne={true} />
+      </div>
+      <div className="my-20 mt-30">
+        <HeroAbout HeroTwo={true} />
       </div>
     </>
   );
