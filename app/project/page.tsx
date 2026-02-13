@@ -79,6 +79,24 @@ export default function PageProject() {
             Author="Fahri Alfa Rizki"
             DateBlog="May, 2023"
           />
+          <Blog
+            TitleCard="Absensi Prakerind"
+            DescriptionCard="This is a student internship attendance web application that I am currently developing using Next.js for the frontend and Express.js for the backend. The application has already been completed and is fully functional. It is scheduled to be deployed in March, after the Eid al-Fitr holiday."
+            imageUrl="/portofolio-6.png"
+            imageAlt="Photo Absensi Prakerind"
+            BadgeBlog={[
+              "NextJs",
+              "ExpressJs",
+              "Tailwind Css",
+              "ORM Sequalize",
+              "MySQL",
+            ]}
+            Visit={false}
+            ImageProfile="/profile.jpeg"
+            ImageProfileAlt="Author Fahri Alfa Rizki"
+            Author="Fahri Alfa Rizki"
+            DateBlog="Des, 2025"
+          />
         </div>
       </div>
     </>

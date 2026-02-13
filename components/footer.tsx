@@ -10,8 +10,8 @@ const footerSections = [
         href: "/",
       },
       {
-        title: "Blog",
-        href: "/blog",
+        title: "Project",
+        href: "/project",
       },
       {
         title: "About",
