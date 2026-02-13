@@ -11,3 +11,8 @@ export interface ICardText {
   footer: string;
   description: string;
 }
+
+export interface IHeroText {
+  title: string;
+  description: string;
+}

@@ -185,3 +185,7 @@
 body {
   letter-spacing: var(--tracking-normal);
 }
+
+.blend {
+  border-image: fill 0 linear-gradient(#0001, #000);
+}

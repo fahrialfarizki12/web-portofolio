@@ -3,6 +3,7 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/navbar";
+import NextTopLoader from "nextjs-toploader";
 import Footer from "@/components/footer";
 
 const fontPoppins = Poppins({
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`${fontPoppins.className} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Navbar />
+          <NextTopLoader color="#e78a53" />
           <main className="px-[3%]">{children}</main>
           <Footer />
         </ThemeProvider>

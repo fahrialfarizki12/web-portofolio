@@ -28,9 +28,9 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
           <NavigationMenuItem>
             <NavigationMenuLink
               asChild
-              className={`${navigationMenuTriggerStyle()} ${pathname === "/blog" && "bg-primary"}`}
+              className={`${navigationMenuTriggerStyle()} ${pathname === "/project" && "bg-primary"}`}
             >
-              <Link href="#">Blog</Link>
+              <Link href="/project">Project</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
