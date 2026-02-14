@@ -11,6 +11,43 @@ import {
 } from "@/components/ui/card";
 import { FaBox } from "react-icons/fa";
 import { TbAward } from "react-icons/tb";
+
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://fahrialfarizki.vercel.app"),
+  title: {
+    default: "Fahri Alfa Rizki | About Me",
+    template: "%s | Fahri Alfa Rizki",
+  },
+  icons: {
+    icon: "/profile.jpeg",
+  },
+  description:
+    "Lihat Sejarah Cerita Fahri Sarung kenapa dia progammer yang terus belajar, dan haus akan ilmu teknologi",
+  keywords: [
+    "Fahri Alfa Rizki",
+    "Web Developer Indonesia",
+    "Next.js Developer",
+    "Fahri Sarung",
+    "Fahri Sarung Developer",
+    "NestJS Developer",
+  ],
+  openGraph: {
+    title: "Fahri Alfa Rizki | Web Developer Indonesia",
+    description:
+      "Portfolio resmi Fahri Alfa Rizki, Fullstack Web Developer Indonesia.",
+    url: "https://fahrialfarizki.vercel.app/",
+    siteName: "Fahri Portfolio",
+    locale: "id_ID",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function AboutPage() {
   return (
     <>

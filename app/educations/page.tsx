@@ -4,6 +4,42 @@ import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import { IoTime } from "react-icons/io5";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://fahrialfarizki.vercel.app"),
+  title: {
+    default: "Fahri Alfa Rizki | Education",
+    template: "%s | Fahri Alfa Rizki",
+  },
+  icons: {
+    icon: "/profile.jpeg",
+  },
+  description:
+    "Lihat bagaimana Fahri Alfa Rizki atau sering juga dikenal sebagai Fahri Sarung Menyelesaikan Pendidikanya saja, dan ahli di bidang IT , Tanpa Kuliah",
+  keywords: [
+    "Fahri Alfa Rizki",
+    "Web Developer Indonesia",
+    "Next.js Developer",
+    "Fahri Sarung",
+    "Fahri Sarung Developer",
+    "NestJS Developer",
+  ],
+  openGraph: {
+    title: "Fahri Alfa Rizki | Web Developer Indonesia",
+    description:
+      "Portfolio resmi Fahri Alfa Rizki, Fullstack Web Developer Indonesia.",
+    url: "https://fahrialfarizki.vercel.app/",
+    siteName: "Fahri Portfolio",
+    locale: "id_ID",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 const educations = [
   {
     imageUrl: "/smk.png",

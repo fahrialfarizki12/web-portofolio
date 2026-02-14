@@ -1,6 +1,41 @@
 import Blog from "@/components/blog";
 import HeroText from "@/components/hero-text";
 import TextHeadingHero from "@/components/text-heading-blog";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://fahrialfarizki.vercel.app"),
+  title: {
+    default: "Fahri Alfa Rizki | Project",
+    template: "%s | Fahri Alfa Rizki",
+  },
+  icons: {
+    icon: "/profile.jpeg",
+  },
+  description:
+    "Portfolio resmi Fahri Alfa Rizki, Web Developer Indonesia yang menggunakan Next.js untuk membangun website modern dan scalable.",
+  keywords: [
+    "Fahri Alfa Rizki",
+    "Web Developer Indonesia",
+    "Next.js Developer",
+    "Fahri Sarung",
+    "Fahri Sarung Developer",
+    "NestJS Developer",
+  ],
+  openGraph: {
+    title: "Fahri Alfa Rizki | Web Developer Indonesia",
+    description:
+      "Portfolio resmi Fahri Alfa Rizki, Fullstack Web Developer Indonesia.",
+    url: "https://fahrialfarizki.vercel.app/",
+    siteName: "Fahri Portfolio",
+    locale: "id_ID",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function PageProject() {
   return (
@@ -73,7 +108,7 @@ export default function PageProject() {
             imageAlt="Photo Personal Web Fahri Alfa Rizki"
             BadgeBlog={["Html", "Tailwind Css", "JavaScript"]}
             Visit={true}
-            VisitUrl="https://fahrialfarizki.biz.id"
+            VisitUrl="https://fahrialfarizki-github-io.vercel.app/"
             ImageProfile="/profile.jpeg"
             ImageProfileAlt="Author Fahri Alfa Rizki"
             Author="Fahri Alfa Rizki"

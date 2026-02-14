@@ -2,6 +2,42 @@ import HeroText from "@/components/hero-text";
 import Blog from "@/components/blog";
 import TextHeadingHero from "@/components/text-heading-blog";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://fahrialfarizki.vercel.app"),
+  title: {
+    default: "Fahri Alfa Rizki | Achievement",
+    template: "%s | Fahri Alfa Rizki",
+  },
+  icons: {
+    icon: "/profile.jpeg",
+  },
+  description:
+    "Lihat bagaimana Fahri Alfa Rizki atau sering juga dikenal sebagai Fahri Sarung Menyelesaikan Pendidikanya saja, dan ahli di bidang IT , Tanpa Kuliah Dan mendapatkan sertifikat dari Institut Teknologi Bandung, Sekolah SMKS PGRI I TRANSPRAM II, dan Driving Certificate",
+  keywords: [
+    "Fahri Alfa Rizki",
+    "Web Developer Indonesia",
+    "Next.js Developer",
+    "Fahri Sarung",
+    "Fahri Sarung Developer",
+    "NestJS Developer",
+  ],
+  openGraph: {
+    title: "Fahri Alfa Rizki | Web Developer Indonesia",
+    description:
+      "Portfolio resmi Fahri Alfa Rizki, Fullstack Web Developer Indonesia.",
+    url: "https://fahrialfarizki.vercel.app/",
+    siteName: "Fahri Portfolio",
+    locale: "id_ID",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function AchievementPage() {
   return (
     <>
