@@ -23,7 +23,7 @@ const footerSections = [
       },
       {
         title: "Contact Us",
-        href: "/contact-us",
+        href: "#",
       },
       {
         title: "Achievement",

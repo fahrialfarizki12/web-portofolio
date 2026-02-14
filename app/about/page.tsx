@@ -1,5 +1,6 @@
 import HeroAbout from "@/components/hero-about";
 import HeroText from "@/components/hero-text";
+import Timeline from "@/components/timeline";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -64,6 +65,11 @@ export default function AboutPage() {
       <div className="my-20">
         <HeroAbout HeroOne={true} />
       </div>
+
+      <div>
+        <Timeline />
+      </div>
+
       <div className="my-20 mt-30">
         <HeroAbout HeroTwo={true} />
       </div>

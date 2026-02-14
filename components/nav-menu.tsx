@@ -54,7 +54,7 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => {
               asChild
               className={`${navigationMenuTriggerStyle()} ${pathname === "/achievement" && "bg-primary"}`}
             >
-              <Link href="#">Achievement</Link>
+              <Link href="/achievement">Achievement</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>
