@@ -11,6 +11,17 @@ import { BackgroundPattern } from "./background-grid";
 import { Badge } from "./ui/badge";
 import { RiJavascriptFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import Link from "next/link";
 export default function Hero() {
   return (
     <>
@@ -41,13 +52,57 @@ export default function Hero() {
               <Button className="rounded-full text-base" size="lg">
                 Contact Us <ArrowUpRight className="h-5! w-5!" />
               </Button>
-              <Button
-                className="rounded-full text-base shadow-none"
-                size="lg"
-                variant="outline"
-              >
-                <File className="h-5! w-5!" /> Resume
-              </Button>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button variant={"outline"}>
+                    <File className="h-5! w-5!" /> Resume
+                  </Button>
+                </DialogTrigger>
+                <DialogContent className="border-accent/50 text-left bg-background">
+                  <DialogHeader>
+                    <DialogTitle>Resume Fahri Alfa Rizki</DialogTitle>
+                    <DialogDescription className="text-left">
+                      Hello everyone, You can download Fahri Alfa Rizki’s resume
+                      through the link below. It is available in two versions:
+                      Indonesian and English. This resume is provided for
+                      professional and company purposes.
+                    </DialogDescription>
+                  </DialogHeader>
+                  <div className="no-scrollbar text-sm -mx-4 max-h-[50vh] overflow-y-auto px-4">
+                    <Button
+                      asChild
+                      variant={"secondary"}
+                      className="w-full my-2"
+                    >
+                      <a
+                        href="/cv/CV-FAHRI-ALFA-RIZKI-ID.pdf"
+                        download="CV-FAHRI-ALFA-RIZKI-ID.pdf"
+                        onClick={() => window.location.reload()}
+                      >
+                        Download Indonesian Resume
+                      </a>
+                    </Button>
+                    <Button
+                      asChild
+                      variant={"secondary"}
+                      className="w-full my-2"
+                    >
+                      <a
+                        href="/cv/CV-FAHRI-ALFA-RIZKI-EN.pdf"
+                        download="CV-FAHRI-ALFA-RIZKI-EN.pdf"
+                        onClick={() => window.location.reload()}
+                      >
+                        Download English Resume
+                      </a>
+                    </Button>
+                  </div>
+                  <DialogFooter>
+                    <DialogClose asChild>
+                      <Button className="mt-5">Close</Button>
+                    </DialogClose>
+                  </DialogFooter>
+                </DialogContent>
+              </Dialog>
             </div>
             <div className="mt-5 px-2">
               <h1 className="text-xl font-semibold mb-3">
